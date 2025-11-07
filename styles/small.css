@@ -107,7 +107,7 @@ h2 {
   font-weight: 800;
   font-size: 1rem;
   color: var(--color-secondary);
-  margin: 0.5rem 10px;
+  margin: 0.5rem 0;
 }
 
 /************************** ACCOUNT LAYOUT **************************/
@@ -125,16 +125,55 @@ main section {
   background-color: var(--color-mygrey-5);
   border: solid 1px var(--color-mygrey-10);
 }
+/***** Signup Styles *****/
 #signup label {
+  font-size: .8rem;
+  font-weight: 300;
+  color:var(--color-mygrey-50);
   display: block;
+  padding-bottom: 1rem;
 }
 #signup input {
   display: block;
+  padding: .5rem 10px;
+  width: 80%;
+  border: 1px solid var(--color-mygrey-20);
+  border-radius: 4px;
 }
-
-
-
-
+#signup input[type="submit"] {
+  background-color: var(--color-secondary);
+  color: var(--color-mygrey-0);
+  border: none;
+  border-radius: 99px;
+  &:hover {
+    background-color: var(--color-primary);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+}
+/***** Display Styles *****/
+#display h3 {
+  color: var(--color-mygrey-40);
+  margin: 1rem 0 0 0;
+  font-size: .8rem;
+  font-weight: 300;
+}
+#display p {
+  margin: 0;
+  color: var(--color-primary);
+}
+#display button {
+  background-color: var(--color-secondary);
+  color: var(--color-mygrey-0);
+  border: none;
+  border-radius: 99px;
+  padding: .5rem;
+  margin-top: .5rem;
+  width: 260px;
+  &:hover {
+    background-color: var(--color-primary);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+}
 
 
 
