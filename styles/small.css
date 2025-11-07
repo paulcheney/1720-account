@@ -1,0 +1,187 @@
+/* -------------- COLOR SCHEME --------------- */
+:root {
+  --color-primary: #81481d;
+  --color-secondary: #617939;
+  /* Add a grey scale Colors */
+  --color-mygrey-0: lab(100% 0 0);
+  --color-mygrey-5: lab(95% 0 0);
+  --color-mygrey-10: lab(90% 0 0);
+  --color-mygrey-20: lab(80% 0 0);
+  --color-mygrey-30: lab(70% 0 0);
+  --color-mygrey-40: lab(60% 0 0);
+  --color-mygrey-50: lab(50% 0 0);
+  --color-mygrey-60: lab(40% 0 0);
+  --color-mygrey-70: lab(30% 0 0);
+  --color-mygrey-80: lab(20% 0 0);
+  --color-mygrey-90: lab(10% 0 0);
+  --color-mygrey-100: lab(0% 0 0);
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+/************************** HEADER **************************/
+header {
+  padding: 10px 0 10px 10px;
+  display: grid;
+  grid-template-columns: 25px auto 44px;
+  column-gap: 8px;
+  align-items: end;
+  border-bottom: 1px solid var(--color-mygrey-10);
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+header span {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+/************************** NAVIGATION **************************/
+nav {
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-mygrey-50);
+  text-decoration: none;
+  padding: 0.6rem 10px;
+  border-bottom: 1px solid var(--color-mygrey-10);
+}
+
+nav a:hover {
+  color: var(--color-mygrey-90);
+}
+
+nav li.active a {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+nav.show {
+  display: block;
+}
+
+/************************** HAMBURGER NAVIGATION **************************/
+.hamburger {
+  background: none;
+  border: none;
+  color: var(--color-mygrey-80);
+  cursor: pointer;
+  font-family: Verdana;
+  font-size: 2rem;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+/************************** MAIN LAYOUT **************************/
+h1 {
+  font-weight: 200;
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin: 0.5rem 10px;
+}
+h2 {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--color-secondary);
+  margin: 0.5rem 10px;
+}
+
+/************************** ACCOUNT LAYOUT **************************/
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+main section {
+  margin: 1rem 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--color-mygrey-5);
+  border: solid 1px var(--color-mygrey-10);
+}
+#signup label {
+  display: block;
+}
+#signup input {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************** SOCIAL MEDIA **************************/
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  margin-bottom: 1rem;
+}
+
+.social a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--color-mygrey-10);
+}
+
+.social img {
+  width: 22px;
+  height: 22px;
+}
+
+.social a:hover {
+  background-color: var(--color-mygrey-0);
+}
+
+/************************** FOOTER **************************/
+footer {
+  background-color: var(--color-mygrey-80);
+  color: var(--color-mygrey-5);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-mygrey-30);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | Living Younger</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- OPEN GRAPH DATA -->
+    <meta property="og:title" content="Account | Living Younger">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://paulcheney.github.io/1720-account/images/opengraph.jpg">
+    <meta property="og:logo" content="https://paulcheney.github.io/1720-account/images/logo.svg" />
+    <meta property="og:url" content="https://paulcheney.github.io/1720-account">
+    <meta property="og:description" content="Account page for customers seeking to live forever by eating healthy food">
+    <meta property="og:site_name" content="Younger Living Account Page">
+
+    <!-- FAV ICON LINKS -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Living Younger" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- SCRIPTS -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/account.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="site logo" width="1" height="1" loading="lazy">
+        <span>Living Younger</span>
+        <button id="hamburger" class="hamburger" aria-label="navigation links"></button>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Farms</a></li>
+            <li><a href="#">Company</a></li>
+            <li  class="active"><a href="index.html">Account</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Account</h1>
+
+        <!-- Create a new profile using form inputs and save it to local storage -->
+        <section id="signup" class="signup">
+            <h2>Create a New Profile</h2>
+            <form>
+                <label>
+                    Full Name: <input type="text" id="name" autocomplete="name" class="input" required >
+                </label>
+                <label>
+                    Phone: <input type="tel" id="phone" autocomplete="phone" class="input" required>
+                </label>
+                <label>
+                    Email: <input type="email" id="email" autocomplete="email" class="input" required>
+                </label>
+            <input class="button" type="submit" value="Create New Profile"> 
+        </form>
+        </section>
+
+        <!-- Display the existing profile from local storage -->
+        <section id="display" class="display">
+            <h2>Your Burger Haven Profile </h2>
+            <h3 >Full Name:</h3>
+            <p id="myName"></p>
+
+            <h3 class="label">Phone Number:</h3>
+            <p id="myPhone"></p>
+
+            <h3 class="label">Email Address:</h3>
+            <p id="myEmail"></p>
+
+            <button class="button">Delete my Profile</button>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="social">
+            
+            <a href="https://github.com/paulcheney" target="_blank"><img src="images/icon-github.svg" alt="GitHub Icon"></a>
+            <a href="https://www.linkedin.com/in/pcheney" target="_blank"><img src="images/icon-linkedin.svg" alt="Linked In Icon"></a>
+            <a href="https://www.youtube.com/@PaulCheney66" target="_blank"><img src="images/icon-youtube.svg" alt="Youtube Icon"></a>
+            <a href="https://www.facebook.com/paul.cheney.1422" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook Icon"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> • Paul Cheney • DWDD1720</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
