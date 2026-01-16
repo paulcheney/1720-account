@@ -150,7 +150,7 @@ main section {
 }
 #signup input[type="submit"] {
   background-color: var(--color-secondary);
-  color: var(--color-mygrey-0);
+  color: var(--color-mygrey-05);
   border: none;
   border-radius: 99px;
   &:hover {
