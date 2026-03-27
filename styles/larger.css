@@ -7,6 +7,11 @@
     margin: 0 auto;
   }
 
+  /************************** HEADER **************************/
+header {
+  grid-template-columns: 25px auto 44px;
+}
+
   /************************** NAVIGATION **************************/
   #hamburger {
     display: none;
