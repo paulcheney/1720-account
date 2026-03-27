@@ -47,7 +47,7 @@ header img {
 header span {
   font-size: 1.3rem;
   font-weight: 300;
-  color: var(--color-primary);
+  color: var(--color-mygrey-90);
 }
 
 /************************** DARK MODE BUTTON **************************/
@@ -70,7 +70,12 @@ header span {
 .dark {
   background-color: var(--color-mygrey-80);
 }
-
+.dark h1 {
+  color: var(--color-mygrey-05);
+}
+.dark header span {
+  color: var(--color-mygrey-05);
+}
 /************************** NAVIGATION **************************/
 nav {
   display: none;
@@ -127,7 +132,7 @@ nav.show {
 h1 {
   font-weight: 700;
   font-size: 2rem;
-  color: var(--color-primary);
+  color: var(--color-mygrey-70);
   margin: 0.5rem 10px;
 }
 h2 {
