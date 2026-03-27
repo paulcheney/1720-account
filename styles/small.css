@@ -1,7 +1,7 @@
 /* -------------- COLOR SCHEME --------------- */
 :root {
   --color-primary: #cc33aa;
-  --color-secondary: #cc334f;
+  --color-secondary: #5577aa;
   /* Add a grey scale Colors */
   --color-mygrey-05: lab(98% 0 0);
   --color-mygrey-10: lab(97% 0 0);
@@ -158,7 +158,7 @@ main section {
 }
 /***** Signup Styles *****/
 #signup label {
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 600;
   color:var(--color-mygrey-50);
   display: block;
