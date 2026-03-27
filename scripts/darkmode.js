@@ -7,6 +7,7 @@ if (localStorage.getItem('theme') === 'dark') {
 	darkel.classList.add('dark');
 }
 
+//Toggle and save the state when icon is clicked
 darkbtn.addEventListener('click', () => {
 	darkel.classList.toggle('dark');
 

@@ -68,7 +68,7 @@ header span {
 }
 /************************** DARK MODE STYLES **************************/
 .dark {
-  background-color: var(--color-mygrey-80);
+  background-color: var(--color-mygrey-95);
 }
 .dark h1 {
   color: var(--color-mygrey-05);
