@@ -1,7 +1,7 @@
 /* -------------- COLOR SCHEME --------------- */
 :root {
   --color-primary: #cc33aa;
-  --color-secondary: #33c7cc;
+  --color-secondary: #cc334f;
   /* Add a grey scale Colors */
   --color-mygrey-05: lab(98% 0 0);
   --color-mygrey-10: lab(97% 0 0);
