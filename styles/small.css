@@ -1,7 +1,7 @@
 /* -------------- COLOR SCHEME --------------- */
 :root {
-  --color-primary: #81481d;
-  --color-secondary: #617939;
+  --color-primary: #cc33aa;
+  --color-secondary: #5577aa;
   /* Add a grey scale Colors */
   --color-mygrey-05: lab(98% 0 0);
   --color-mygrey-10: lab(97% 0 0);
@@ -36,7 +36,6 @@ header {
   column-gap: 8px;
   align-items: end;
   border-bottom: 1px solid var(--color-mygrey-10);
-  background-color: white;
 }
 
 header img {
@@ -70,9 +69,6 @@ header span {
 /************************** DARK MODE STYLES **************************/
 .dark {
   background-color: var(--color-mygrey-80);
-}
-.dark h1 {
-  color: white;
 }
 
 /************************** NAVIGATION **************************/
@@ -113,7 +109,7 @@ nav.show {
 .hamburger {
   background: none;
   border: none;
-  color: var(--color-mygrey-80);
+  color: var(--color-secondary);
   cursor: pointer;
   font-family: Verdana;
   font-size: 2rem;
@@ -129,7 +125,7 @@ nav.show {
 
 /************************** MAIN LAYOUT **************************/
 h1 {
-  font-weight: 200;
+  font-weight: 700;
   font-size: 2rem;
   color: var(--color-primary);
   margin: 0.5rem 10px;
@@ -150,11 +146,10 @@ h2 {
   display: block;
 }
 main section {
-  margin: 1rem 10px;
+  margin: .5rem 10px;
   padding: 10px;
   border-radius: 10px;
-  background-color: var(--color-mygrey-05);
-  border: solid 1px var(--color-mygrey-10);
+  border: solid 1px var(--color-mygrey-50);
 }
 /***** Signup Styles *****/
 #signup label {
@@ -183,7 +178,7 @@ main section {
 }
 /***** Display Styles *****/
 #display h3 {
-  color: var(--color-mygrey-40);
+  color: var(--color-mygrey-50);
   margin: 1rem 0 0 0;
   font-size: .8rem;
   font-weight: 300;
