@@ -5,6 +5,7 @@ submitBtn.addEventListener("click", createProfile);
 
 //GRAB REFERENCES TO THE DELETE LOCAL STORAGE
 const display = document.querySelector("#display");
+const details = document.querySelector("#display div");
 const deleteBtn = document.querySelector("#display > button");
 deleteBtn.addEventListener("click", deleteProfile);
 
@@ -15,20 +16,18 @@ const myaccount = localStorage.getItem("ly-Name");
 
 // DO THE SWITCHEROO
 if (myaccount === null) {
-  signup.className = "show";
-  display.className = "hide";
+  console.log("null")
+  signup.classList.remove("hide");
+  display.classList.add("hide");
 } else {
-  signup.className = "hide";
-  display.className = "show";
-  //Grab Values from local storage
-  const name = document.querySelector("#myName");
-  name.innerHTML = localStorage.getItem("ly-Name");
-
-  const email = document.querySelector("#myEmail");
-  email.innerHTML = localStorage.getItem("ly-Email");
-
-  const phone = document.querySelector("#myPhone");
-  phone.innerHTML = localStorage.getItem("ly-Phone");
+  signup.classList.add("hide");
+  display.classList.remove("hide");
+  //Display Values from local storage
+  details.innerHTML = `
+  <h3>Full Name</h3><p>${localStorage.getItem("ly-Name")}</p>
+  <h3>Email Address</h3><p>${localStorage.getItem("ly-Email")}</p>
+  <h3>Phone Number</h3><p>${localStorage.getItem("ly-Phone")}</p>
+  `
 }
 
 // FUNCTION TO CREATE A NEW PROFILE
